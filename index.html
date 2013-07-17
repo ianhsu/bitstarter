@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <!-- <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
 	 <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css"> -->
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic"
+	  rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,600italic,300,400,600,700,800" rel="stylesheet" type="text/css">
     <style type="test/css">
 
     /* Large desktop */ 
@@ -14,7 +17,19 @@
       body {
         padding-top: 60px;
       }
-    } 
+    }
+
+    /* All form factors */
+
+    /* Main body and headings */
+    body {
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+    .heading, .subheading {
+      font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+
   </style>
   </head>
   <body>
@@ -28,29 +43,31 @@
 	    <span class="icon-bar"></span>
 	  </button>
 	  <a class="brand" href="#">Bitstarter</a>
-	  <div class="nav-collapse colapse">
+	  <div class="nav-collapse collapse">
 	    <ul class="nav">
-	      <li><class="active"><a href="#">Home</a></li>
+	      <li class="active"><a href="#">Home</a></li>
 	      <li><a href="#about">About</a></li>
 	      <li><a href="#contact">Contact</a></li>
 	    </ul>
 	  </div><!--/.nav-collapse -->
 	</div>
-	<div class="span6 blank">
-	  Blank
-	</div>
-	<div class="span4 about">
-	  About
-	</div>
     </div>
-    <div class="row heading">
-      <div class="span12">
-	<h1>Bitstarter Title</h1>
+
+    <!-- Row-fluid inside containers to achieve a resiable layout. -->
+    <!-- http://blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- stackoverflow.com/a/12270322 -->
+
+    <div class="container">
+      <div class="row-fluid heading">
+	<div class"span12">
+	<h1>Product</h1>
       </div>
     </div>
-    <div class="row subheading">
+    <div class="row-fluid subheading">
       <div class="span12">
-	<p class="lead">This is my first bitstarter project.</p>
+	<!-- Special typography from Bootstrap for lead paragraph. -->
+	<!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+	<p class="lead">One sentence description.</p>
       </div>
     </div>
     <div class="row pitch">
